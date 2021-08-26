@@ -89,6 +89,12 @@ variable "ip_access" {
   default = "0.0.0.0"
 }
 
+variable "comment" {
+  type = string
+  description = "(Optional) IP access comments"
+  default = "Deployed by Terraform"
+}
+
 # Private link configuration
 variable "vnet_name" {
   type = string

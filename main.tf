@@ -60,6 +60,7 @@ module "ipaccess" {
   version = "0.0.1"
   project_id = module.project.project_id
   ip_address = var.ip_access
+  comment = var.comment
 }
 
 module "privatelink" {
