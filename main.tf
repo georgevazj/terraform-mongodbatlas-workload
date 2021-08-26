@@ -64,7 +64,7 @@ module "ipaccess" {
 
 module "privatelink" {
   source  = "app.terraform.io/georgevazj-lab/privatelink/mongodbatlas"
-  version = "0.0.5"
+  version = "0.0.6"
   azure_pve_name = var.azure_pve_name
   project_id = module.project.project_id
   resource_group_name = module.az_workload.resource_group_name
