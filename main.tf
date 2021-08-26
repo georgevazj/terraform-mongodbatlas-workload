@@ -37,7 +37,7 @@ module "project" {
 
 module "cluster" {
   source  = "app.terraform.io/georgevazj-lab/cluster/mongodbatlas"
-  version = "0.0.1"
+  version = "0.0.2"
   cluster_name = var.cluster_name
   project_id = module.project.project_id
   mongodb_version = var.mongodb_version
@@ -64,7 +64,7 @@ module "ipaccess" {
 
 module "privatelink" {
   source  = "app.terraform.io/georgevazj-lab/privatelink/mongodbatlas"
-  version = "0.0.1"
+  version = "0.0.2"
   azure_pve_name = var.azure_pve_name
   project_id = module.project.project_id
   resource_group_name = module.az_workload.resource_group_name
