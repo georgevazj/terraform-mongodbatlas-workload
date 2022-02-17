@@ -73,11 +73,6 @@ variable "database_username" {
   description = "(Required) MongoDB database username"
 }
 
-variable "database_password" {
-  type = string
-  description = "(Required) MongoDB database user password"
-}
-
 variable "database_name" {
   type = string
   description = "(Required) Database name"

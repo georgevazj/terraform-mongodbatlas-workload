@@ -47,11 +47,10 @@ module "cluster" {
 
 module "dbuser" {
   source  = "app.terraform.io/georgevazj-lab/dbuser/mongodbatlas"
-  version = "0.0.1"
+  version = "0.0.2"
 
   database_name = var.database_name
   database_username = var.database_username
-  database_password = var.database_password
   project_id = module.project.project_id
 }
 
