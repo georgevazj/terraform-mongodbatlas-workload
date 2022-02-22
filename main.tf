@@ -62,13 +62,13 @@ module "ipaccess" {
   comment = var.comment
 }
 
-module "privatelink" {
-  source  = "app.terraform.io/georgevazj-lab/privatelink/mongodbatlas"
-  version = "0.0.10"
-  azure_pve_name = var.azure_pve_name
-  project_id = module.project.project_id
-  resource_group_name = module.az_workload.resource_group_name
-  subnet_name = var.subnet_name
-  vnet_name = var.vnet_name
-  vnet_resource_group_name = var.vnet_resource_group_name
-}
+# module "privatelink" {
+#   source  = "app.terraform.io/georgevazj-lab/privatelink/mongodbatlas"
+#   version = "0.0.10"
+#   azure_pve_name = var.azure_pve_name
+#   project_id = module.project.project_id
+#   resource_group_name = module.az_workload.resource_group_name
+#   subnet_name = var.subnet_name
+#   vnet_name = var.vnet_name
+#   vnet_resource_group_name = var.vnet_resource_group_name
+# }
